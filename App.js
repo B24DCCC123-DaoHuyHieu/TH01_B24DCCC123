@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-// BÀI 4: Component con
-function ProductItem({ product, addToCart }) {
+ưfunction ProductItem({ product, addToCart }) {
   return (
     <div
       style={{
