@@ -1,5 +1,5 @@
 import { useState } from "react";
-ưfunction ProductItem({ product, addToCart }) {
+function ProductItem({ product, addToCart }) {
   return (
     <div
       style={{
