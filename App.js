@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 ưfunction ProductItem({ product, addToCart }) {
   return (
     <div
@@ -31,10 +30,10 @@ import { useState } from "react";
 }
 
 function App() {
-  //BÀI 1: Bộ đếm ký tự
+  
   const [text, setText] = useState("");
 
-  // BÀI 2: Đèn giao thông 
+  
   const [light, setLight] = useState("red");
   const changeLight = () => {
     setLight((prev) => {
@@ -44,7 +43,7 @@ function App() {
     });
   };
 
-  //BÀI 3: Danh sách công việc
+  
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
   const addTask = () => {
@@ -57,7 +56,7 @@ function App() {
     setTasks(tasks.filter((_, i) => i !== index));
   };
 
-  // BÀI 4: Giỏ hàng 
+  
   const products = [
     { id: 1, name: "Sản phẩm A", price: 100 },
     { id: 2, name: "Sản phẩm B", price: 200 },
@@ -70,7 +69,7 @@ function App() {
   const totalItems = cart.length;
   const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
 
-  // BÀI 5: Form Đăng ký
+  
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -86,10 +85,10 @@ function App() {
     }
   };
 
-  // RETURN 
+  
   return (
     <div style={{ padding: "20px" }}>
-      {/* BÀI 1  */}
+      
       <h2>Bài 1: Bộ đếm ký tự</h2>
       <input
         type="text"
@@ -103,7 +102,7 @@ function App() {
 
       <hr />
 
-      {/*  BÀI 2 */}
+      
       <h2>Bài 2: Đèn giao thông</h2>
       <div
         style={{
@@ -147,7 +146,7 @@ function App() {
 
       <hr />
 
-      {/*BÀI 3*/}
+      
       <h2>Bài 3: Danh sách công việc</h2>
       <input
         type="text"
@@ -173,7 +172,7 @@ function App() {
 
       <hr />
 
-      {/*BÀI 4*/}
+      
       <h2>Bài 4: Giỏ hàng</h2>
       <p>
         Giỏ hàng: {totalItems} sản phẩm, tổng tiền: {totalPrice}đ
@@ -184,7 +183,7 @@ function App() {
 
       <hr />
 
-      {/*BÀI 5*/}
+      
       <h2>Bài 5: Form Đăng ký</h2>
       <form onSubmit={handleSubmit}>
         <div>
